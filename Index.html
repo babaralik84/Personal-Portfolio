@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="images/typed.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">PORTFO<span>LIO</span></div>
+        <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="text">
+      <p> Hello, My name is</p>
+      <h1>BABAR ALI KHAN</h1>
+      <p>And I am a <span id="ani" style="color:red;"></span></p>
+      <button class="btn1">Contact Me</button>
+      </div>
+
+    </header>
+
+    <section id="about">
+      <div class="section-info">
+        <h2>About</h2>
+        <p> Who am I?</p>
+      </div>
+    </section>
+
+    <div class="about-row">
+      <div class="about-left-col">
+        <img src="images/about.jpg">
+      </div>
+
+      <div class="about-right-col">
+        <p id="p-title">Hello everyone, I am the Web Developer you were looking for.</p><br>
+        <p> A successful website does three things:<br>
+            It attracts the right kinds of visitors.<br>
+            Guides them to the main services or product you offer.<br>
+            Collect Contact details for future ongoing relation.
+        </p><br>
+        <button class="btn1">Download CV</button>
+      </div>  
+    </div>
+    
+  <section id="skills">
+      <div class="section-info">
+        <h2>Skills</h2>
+        <p> Who am I?</p>
+      </div>
+
+    <div class="skills-row">
+      <div class="skills-left">
+      <p>Also known as web programmers or web coders, 
+      web developers essentially make a website work by building the functionality, 
+      interactivity and visible structure of the site, 
+      normally based on the vision of designers and other key roles.
+      Web developers are also responsible for ensuring a site functions correctly on all browsers -
+      both desktop and mobile - through testing. 
+      Once a site is live, a developer carries out  updates and other maintenance tasks as necessary.</p>
+      </div>
+      <div class="skills-right">
+        <div class="progress-div">
+          <p>
+            <span>HTML</span><br>
+            <progress value="80" max="100"></progress>
+            <span>80%</span>
+          </p>
+          <p>
+            <span>CSS</span><br>
+            <progress value="65" max="100"></progress>
+            <span>65%</span>
+          </p>
+          <p>
+            <span>JavascriptL</span><br>
+            <progress value="80" max="100"></progress>
+            <span>80%</span>
+          </p>
+          <p>
+            <span>React.Js</span><br>
+            <progress value="50" max="100"></progress>
+            <span>50%</span>
+          </p>
+          <p>
+            <span>Python</span><br>
+            <progress value="70" max="100"></progress>
+            <span>70%</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+    <div class="section-info">
+        <h2>Services</h2>
+        <p> What I provide.</p>
+      </div>
+      <div class="services-row">
+        <div class="services-box">
+          <img src="images/b2.jpg">
+          <h2>Web Developer</h2>
+          <p>Your website is the center of your digital eco-system,<br>
+           like a brick and mortar location,<br>
+           the experience matters once a customer enters,<br>
+           just as much as the perception they have of you before they walk through the door</p>
+        </div>
+        <div class="services-box">
+          <img src="images/b2.jpg">
+          <h2>Web Designer</h2>
+          <p>Remember, the web isn't about control.<br> 
+             If a visitor to your site is familiar with using a browser's native form doodad,<br>
+             you won't be doing them any favors if you override the browser functionality with your own widget,<br>
+             even if you think your widget looks better.</p>
+        </div>
+      </div>
+      </section>
+
+      <section id="contact">
+      
+      
+      <div class="section-info">
+        <h2>Contact</h2>
+        <p> Get in touch.</p>
+      </div>
+      
+      <div class="form-group">
+      <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <br>
+      <textarea cols="40" rows="10" placeholder="Message"></textarea><br>
+      <button class="btn1">Submit</button>
+      </form>
+      </div>
+      
+      </section>
+
+
+ <script src="images/jquery.ripples-min.js"></script>
+ <script> jQuery(document).ready(function() {
+   $('header').ripples({
+  dropRadius:40,
+  perturbance: 0.3,
+});
+ });
+ </script>
+
+ <script>
+ let animate = new Typed('#ani', {
+   strings:["Web Developer", "Web Designer"],
+   typeSpeed:100,
+   backSpeed:100,
+   loop:true,
+ })
+ </script>
+  </body>
+</html>
